@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-language" content="ja">
+
+    <title></title>
+
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <script type="text/javascript" src="date-human-readable.js"></script>
+    <script type="text/javascript">
+
+      function print() {
+        var params = [].slice.apply(arguments).join("")
+        document.getElementById("output").innerHTML += params + "<br>";
+      }
+
+      window.onload = function() {
+        var d = new Date();
+        print("now: ", d);
+        print("-----");
+        print("tomorrow: ", d.tomorrow());
+        print("yesterday: ", d.yesterday());
+        print("-----");
+        print("next week: ", d.nextWeek());
+        print("last week: ", d.lastWeek());
+        print("-----");
+        print("next month: ", d.nextMonth());
+        print("last month: ", d.lastMonth());
+        print("-----");
+        print("next year: ", d.nextYear());
+        print("last year: ", d.lastYear());
+        print("-----");
+        print("next Sunday: ", d.nextSunday());
+        print("next Monday: ", d.nextMonday());
+        print("next Tuesday: ", d.nextTuesday());
+        print("next Wednesday: ", d.nextWednesday());
+        print("next Thursday: ", d.nextThursday());
+        print("next Friday: ", d.nextFriday());
+        print("next Saturday: ", d.nextSaturday());
+        print("-----");
+        print("last Sunday: ", d.lastSunday());
+        print("last Monday: ", d.lastMonday());
+        print("last Tuesday: ", d.lastTuesday());
+        print("last Wednesday: ", d.lastWednesday());
+        print("last Thursday: ", d.lastThursday());
+        print("last Friday: ", d.lastFriday());
+        print("last Saturday: ", d.lastSaturday());
+      }
+    </script>
+
+  </head>
+  <body>
+    <div id="output"></div>
+  </body>
+</html>
