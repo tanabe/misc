@@ -1,8 +1,8 @@
-" Name: AutomaticallySetIndentStyle
+" Name: AutoSetIndentStyle
 " Version: 0.1
 " Author: tanabe
 " NOTE: this is experimental script
-function! AutomaticallySetIndentStyle()
+function! AutoSetIndentStyle()
   let l:max_lines = 100
   let l:total_lines = line("$")
   let l:tab_indented_lines = 0
